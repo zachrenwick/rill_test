@@ -1,0 +1,4 @@
+# Visit https://docs.rilldata.com/ to learn more about Rill code artifacts.
+
+type: "https"
+uri: "https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD"

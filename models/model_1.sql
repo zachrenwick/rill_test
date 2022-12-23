@@ -1,5 +1,2 @@
-select *,
-
-datetime(DATE OCC) as timestamp
-
+select *
 from crime_data

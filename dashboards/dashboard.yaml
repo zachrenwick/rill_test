@@ -1,7 +1,48 @@
 # Visit https://docs.rilldata.com/references/project-files to learn more about Rill project files.
 
 display_name: "dashboard"
-model: ""
-timeseries: ""
-measures: []
-dimensions: []
+model: "model_1"
+timeseries: "Date Rptd"
+measures:
+  - label: Total records
+    expression: count(*)
+    description: Total number of records present
+    format_preset: humanize
+  - label: "Count of Locations"
+    expression: "approx_count_distinct(LOCATION)"
+    description: "Location count"
+    format_preset: humanize
+dimensions:
+  - label: AREA NAME
+    property: AREA NAME
+    description: ""
+  - label: Crm Cd Desc
+    property: Crm Cd Desc
+    description: ""
+  - label: Mocodes
+    property: Mocodes
+    description: ""
+  - label: Vict Sex
+    property: Vict Sex
+    description: ""
+  - label: Vict Descent
+    property: Vict Descent
+    description: ""
+  - label: Premis Desc
+    property: Premis Desc
+    description: ""
+  - label: Weapon Desc
+    property: Weapon Desc
+    description: ""
+  - label: Status
+    property: Status
+    description: ""
+  - label: Status Desc
+    property: Status Desc
+    description: ""
+  - label: LOCATION
+    property: LOCATION
+    description: ""
+  - label: Cross Street
+    property: Cross Street
+    description: ""
